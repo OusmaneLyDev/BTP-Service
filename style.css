@@ -22,6 +22,10 @@ section {
 }
 body {
     position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
 
 
@@ -98,7 +102,7 @@ header {
     width: 100%;
 }
 .menu li a:hover {
-    color: #000;
+    /* color: #000; */
 }
 header img {
     width: 60%;
@@ -203,6 +207,7 @@ padding-top: 100px;
     justify-content: center;
     flex-direction: column;
     padding: 50px 10px;
+    justify-content: space-between;
 }
 .title {
     font-size: 40px;
@@ -230,13 +235,14 @@ padding-top: 100px;
 
 }
 .dishes .dish  img {
-    width: 180px;
-    height: 170px;  
+    width: 240px;
+    height: 230px;  
     margin-bottom: 13px;
+    
 }
 .dishes .dish p {
     font-size: 12px;
-    text-align: center;
+    text-align: left;
 
 
 }
@@ -315,7 +321,7 @@ padding-top: 100px;
 }
 .dishes1 .dish p {
     font-size: 12px;
-    text-align: center;
+    text-align: left;
     color: white;
 
 
@@ -335,7 +341,6 @@ padding-top: 100px;
     width: 80%;
     max-width: 1200px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: center;
     align-items: center; 
     margin-left: 10%;
@@ -378,23 +383,32 @@ padding-top: 100px;
     cursor: pointer;
     height: 48px;
     width: 160px;
-    margin-left: 70px;
+    margin-left: 90px;
+ 
+    
 }
 .map {
-    width: 30%;
     flex: 1;
-    background-image: url('path/to/your/map/image.jpg');
-    background-size: cover;
-    background-position: center;
+
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        width: 80%;
     }
     .map {
-        width: 50%;
+        width: 80%;
+
+        
+    }
+    .contact-form input, .contact-form textarea{
+        width: 100%;
+
+    }
+    .contact-form button {
+      margin-left: 30px;
     }
 }
 
@@ -505,12 +519,17 @@ footer {
         font-size: 15px;
     }
     #menu .dishes .dish {
-        width: 100%;
-        max-width: 260px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     #menu .dishes1 .dish {
-        width: 100%;
-        max-width: 260px;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* max-width: 260px; */
     }
     
     .toggle_menu {
@@ -602,7 +621,9 @@ footer {
     }
 
     .history p {
-        font-size: 16px;
+        width: 80%;
+        font-size: 14px;
         line-height: 1.4;
+        text-align: center;
     }
 }
